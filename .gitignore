@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Java
+target/
+build/
+.gradle/
+*.class
+
+# Node.js
+node_modules/
+dist/
+
+# Python
+.venv/
+__pycache__/
+
+# Logs
+*.log
+
+# Local generated data
+outputs/
+data/private/
+
+# Editor files
+.vscode/*.log
+.idea/
