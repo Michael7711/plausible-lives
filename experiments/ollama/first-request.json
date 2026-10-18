@@ -1,0 +1,28 @@
+{
+  "model": "gpt-oss:20b",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Create a fictional daily schedule for a university student. Include exactly three activities. Deliberately make two activities overlap in time. Use integer hours from 0 to 24."
+    }
+  ],
+  "stream": false,
+  "format": {
+    "type": "object",
+    "properties": {
+      "activities": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {"type": "string"},
+            "start_hour": {"type": "integer"},
+            "end_hour": {"type": "integer"}
+          },
+          "required": ["name", "start_hour", "end_hour"]
+        }
+      }
+    },
+    "required": ["activities"]
+  }
+}
