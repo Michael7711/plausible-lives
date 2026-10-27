@@ -1,0 +1,12 @@
+{
+  "name": "plausible-lives-ollama-repair",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test": "node --test repair.test.cjs",
+    "smoke": "node run.cjs smoke",
+    "benchmark": "node run.cjs benchmark"
+  }
+}

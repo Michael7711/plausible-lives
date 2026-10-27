@@ -1,0 +1,77 @@
+{
+  "$schema": "https://universalautomation.wiki/workspec/v2.2.schema.json",
+  "simulation": {
+    "schema_version": "2.2",
+    "meta": {
+      "title": "First parcel experiment",
+      "description": "One worker packs a box, then dispatches it.",
+      "domain": "logistics"
+    },
+    "config": {
+      "time_unit": "minutes",
+      "start_time": "09:00",
+      "end_time": "10:00"
+    },
+    "world": {
+      "layout": {
+        "locations": [
+          {
+            "id": "desk",
+            "name": "Packing Desk",
+            "shape": {
+              "type": "rect",
+              "x": 20,
+              "y": 20,
+              "width": 200,
+              "height": 140
+            }
+          }
+        ]
+      },
+      "objects": [
+        {
+          "id": "worker",
+          "type": "actor",
+          "name": "Worker",
+          "location": "desk",
+          "properties": {
+            "state": "available"
+          }
+        },
+        {
+          "id": "box",
+          "type": "product",
+          "name": "Box",
+          "location": "desk",
+          "properties": {
+            "state": "unpacked",
+            "quantity": 1,
+            "packed": false,
+            "dispatched": false
+          }
+        }
+      ]
+    },
+    "process": {
+      "tasks": [
+        {
+          "id": "pack_box",
+          "actor_id": "worker",
+          "start": "09:00",
+          "duration": "10m",
+          "location": "desk"
+        },
+        {
+          "id": "dispatch_box",
+          "actor_id": "worker",
+          "start": "09:10",
+          "duration": "5m",
+          "location": "desk",
+          "depends_on": [
+            "pack_box"
+          ]
+        }
+      ]
+    }
+  }
+}

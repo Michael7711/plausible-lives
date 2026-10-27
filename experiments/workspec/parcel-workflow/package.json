@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node verify.cjs",
+    "validate:document": "workspec validate start.workspec.json --no-changes --no-generator --no-constraints --json",
+    "validate:valid": "workspec validate start.workspec.json --time 09:15 --json --yes",
+    "validate:invalid": "workspec validate start.workspec.json --changes invalid.changes.workspec.js --time 09:15 --json --yes",
+    "snapshot": "workspec snapshot start.workspec.json --time 09:15 --json"
   },
   "keywords": [],
   "author": "",

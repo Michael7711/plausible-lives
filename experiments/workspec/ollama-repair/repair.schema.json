@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Replacement effects for pack_box completion",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["packing_effects", "explanation"],
+  "properties": {
+    "packing_effects": {
+      "type": "array",
+      "maxItems": 2,
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["property", "value"],
+            "properties": {
+              "property": { "const": "packed" },
+              "value": { "type": "boolean" }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["property", "value"],
+            "properties": {
+              "property": { "const": "state" },
+              "value": { "enum": ["packed", "unpacked"] }
+            }
+          }
+        ]
+      }
+    },
+    "explanation": { "type": "string", "minLength": 1, "maxLength": 1000 }
+  }
+}
