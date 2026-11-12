@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "dignity-and-public-space",
+  "entities": [
+    {
+      "id": "carla",
+      "kind": "person",
+      "label": "Carla"
+    },
+    {
+      "id": "david",
+      "kind": "person",
+      "label": "David"
+    },
+    {
+      "id": "park",
+      "kind": "public-space",
+      "label": "Central Park"
+    },
+    {
+      "id": "safety",
+      "kind": "value",
+      "label": "Safety"
+    },
+    {
+      "id": "welcomeness",
+      "kind": "value",
+      "label": "Welcomeness"
+    },
+    {
+      "id": "noise",
+      "kind": "resource",
+      "label": "Noise Level"
+    }
+  ],
+  "statements": [
+    {
+      "id": "prem1",
+      "kind": "premise",
+      "subject": "park",
+      "predicate": "is-used-by",
+      "object": "both",
+      "context": "Carla and David both use Central Park."
+    },
+    {
+      "id": "val1",
+      "kind": "value",
+      "subject": "carla",
+      "predicate": "values",
+      "object": {
+        "ref": "safety"
+      }
+    },
+    {
+      "id": "val2",
+      "kind": "value",
+      "subject": "david",
+      "predicate": "values",
+      "object": {
+        "ref": "welcomeness"
+      }
+    },
+    {
+      "id": "opt1",
+      "kind": "option",
+      "subject": "noise",
+      "predicate": "could-be-regulated",
+      "object": "low",
+      "context": "Reducing noise could increase safety for Carla."
+    },
+    {
+      "id": "opt2",
+      "kind": "option",
+      "subject": "noise",
+      "predicate": "could-be-regulated",
+      "object": "moderate",
+      "context": "Moderate noise might feel welcoming for David."
+    }
+  ]
+}

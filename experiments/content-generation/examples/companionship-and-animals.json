@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "companionship-and-animals",
+  "entities": [
+    {
+      "id": "emma",
+      "kind": "person",
+      "label": "Emma"
+    },
+    {
+      "id": "sparky",
+      "kind": "animal",
+      "label": "Sparky the dog"
+    },
+    {
+      "id": "feeding",
+      "kind": "resource",
+      "label": "Food"
+    }
+  ],
+  "statements": [
+    {
+      "id": "prem1",
+      "kind": "premise",
+      "subject": "sparky",
+      "predicate": "needs",
+      "object": "daily food",
+      "context": "Sparky requires daily feeding."
+    },
+    {
+      "id": "val1",
+      "kind": "value",
+      "subject": "emma",
+      "predicate": "values",
+      "object": "companionship"
+    },
+    {
+      "id": "opt1",
+      "kind": "option",
+      "subject": "feeding",
+      "predicate": "could-be-offered-by",
+      "object": "emma",
+      "context": "Emma could feed Sparky herself."
+    },
+    {
+      "id": "opt2",
+      "kind": "option",
+      "subject": "feeding",
+      "predicate": "could-be-offered-by",
+      "object": "vet",
+      "context": "A vet could feed Sparky if Emma is busy."
+    }
+  ]
+}

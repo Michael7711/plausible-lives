@@ -1,0 +1,1 @@
+{ "batches": 1, "batchSize": 1, "numPredict": 2048, "requestTimeoutMs": 60000, "runBudgetMs": 70000, "promptFile": "initial-prompt.txt" }

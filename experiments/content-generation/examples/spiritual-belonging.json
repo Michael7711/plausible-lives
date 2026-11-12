@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "spiritual-belonging-1",
+  "entities": [
+    {
+      "id": "family-godown",
+      "kind": "place",
+      "label": "family godown"
+    },
+    {
+      "id": "grandma-sara",
+      "kind": "person",
+      "label": "Grandma Sara"
+    },
+    {
+      "id": "cousin-ali",
+      "kind": "person",
+      "label": "Cousin Ali"
+    },
+    {
+      "id": "weekly-meditation",
+      "kind": "activity",
+      "label": "weekly meditation"
+    },
+    {
+      "id": "personal-prayer",
+      "kind": "activity",
+      "label": "personal prayer"
+    },
+    {
+      "id": "community-sabbath",
+      "kind": "event",
+      "label": "community sabbath"
+    }
+  ],
+  "statements": [
+    {
+      "id": "s1",
+      "kind": "premise",
+      "subject": "family-godown",
+      "predicate": "contains",
+      "object": {
+        "ref": "weekly-meditation"
+      },
+      "context": "The godown hosts a weekly meditation that is central to the family's tradition."
+    },
+    {
+      "id": "s2",
+      "kind": "value",
+      "subject": "grandma-sara",
+      "predicate": "holds-value",
+      "object": "deep devotion",
+      "context": "Grandma Sara considers devotion to be the core of spiritual life."
+    },
+    {
+      "id": "s3",
+      "kind": "value",
+      "subject": "cousin-ali",
+      "predicate": "holds-value",
+      "object": "personal autonomy",
+      "context": "Cousin Ali values the freedom to choose his own spiritual path."
+    },
+    {
+      "id": "s4",
+      "kind": "option",
+      "subject": "cousin-ali",
+      "predicate": "could-participate-in",
+      "object": {
+        "ref": "community-sabbath"
+      },
+      "context": "Ali could attend the community sabbath, aligning with family practice."
+    },
+    {
+      "id": "s5",
+      "kind": "option",
+      "subject": "cousin-ali",
+      "predicate": "could-practice",
+      "object": {
+        "ref": "personal-prayer"
+      },
+      "context": "Ali could also practice personal prayer, maintaining his autonomy."
+    },
+    {
+      "id": "s6",
+      "kind": "option",
+      "subject": "cousin-ali",
+      "predicate": "could-avoid",
+      "object": {
+        "ref": "weekly-meditation"
+      },
+      "context": "Ali could choose to abstain from the weekly meditation if he feels it conflicts with his beliefs."
+    },
+    {
+      "id": "s7",
+      "kind": "option",
+      "subject": "cousin-ali",
+      "predicate": "could-explore",
+      "object": "alternative rituals",
+      "context": "Ali could explore alternative rituals that resonate with his personal spirituality."
+    }
+  ]
+}

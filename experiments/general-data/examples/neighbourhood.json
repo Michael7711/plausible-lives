@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "neighbourhood-possibilities",
+  "entities": [
+    { "id": "ari", "kind": "person", "label": "Ari" },
+    { "id": "mika", "kind": "person", "label": "Mika" },
+    { "id": "nell", "kind": "person", "label": "Nell" },
+    { "id": "market-flat", "kind": "home", "label": "Flat above the market" },
+    { "id": "riverside-room", "kind": "home", "label": "Riverside room" },
+    { "id": "market-square", "kind": "public-space", "label": "Market square" },
+    { "id": "step-free-access", "kind": "access-feature", "label": "Step-free access" },
+    { "id": "community-choir", "kind": "community-group", "label": "Community choir" },
+    { "id": "quiet-reflection", "kind": "practice", "label": "Quiet reflection" },
+    { "id": "river-habitat", "kind": "ecosystem", "label": "River habitat" }
+  ],
+  "statements": [
+    { "id": "care", "kind": "premise", "subject": "ari", "predicate": "shares-care-for", "object": { "ref": "nell" }, "context": "During the school term." },
+    { "id": "riverside-access", "kind": "premise", "subject": "riverside-room", "predicate": "offers", "object": { "ref": "step-free-access" } },
+    { "id": "market-access", "kind": "premise", "subject": "market-flat", "predicate": "has-step-free-access", "object": false },
+    { "id": "access-matters", "kind": "value", "subject": "ari", "predicate": "values", "object": { "ref": "step-free-access" } },
+    { "id": "market-energy", "kind": "value", "subject": "mika", "predicate": "enjoys", "object": { "ref": "market-square" }, "context": "The crowds make the neighbourhood feel welcoming." },
+    { "id": "market-noise", "kind": "value", "subject": "ari", "predicate": "prefers-to-avoid", "object": { "ref": "market-square" }, "context": "When looking for a quiet place to recover from noise." },
+    { "id": "choir-belonging", "kind": "value", "subject": "mika", "predicate": "values", "object": { "ref": "community-choir" }, "context": "Singing together is a source of belonging." },
+    { "id": "reflection", "kind": "value", "subject": "ari", "predicate": "values", "object": { "ref": "quiet-reflection" }, "context": "A private spiritual practice." },
+    { "id": "river", "kind": "value", "subject": "ari", "predicate": "wants-to-protect", "object": { "ref": "river-habitat" } },
+    { "id": "choir-fee", "kind": "premise", "subject": "community-choir", "predicate": "weekly-fee-gbp", "object": 0 },
+    { "id": "room-description", "kind": "premise", "subject": "riverside-room", "predicate": "outlook", "object": "Looks out on the river." },
+    { "id": "move-to-market", "kind": "option", "subject": "ari", "predicate": "could-live-at", "object": { "ref": "market-flat" } },
+    { "id": "move-to-river", "kind": "option", "subject": "ari", "predicate": "could-live-at", "object": { "ref": "riverside-room" } },
+    { "id": "river-care", "kind": "option", "subject": "mika", "predicate": "could-volunteer-for", "object": { "ref": "river-habitat" } }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "id": "language-and-memory-1",
+  "entities": [
+    {
+      "id": "old-bridge",
+      "kind": "location",
+      "label": "Old Bridge"
+    },
+    {
+      "id": "mira",
+      "kind": "person",
+      "label": "Mira"
+    },
+    {
+      "id": "mira-parents",
+      "kind": "group",
+      "label": "Mira's parents"
+    },
+    {
+      "id": "sanskrit",
+      "kind": "language",
+      "label": "Sanskrit"
+    },
+    {
+      "id": "family-legend",
+      "kind": "story",
+      "label": "Family legend"
+    },
+    {
+      "id": "new-city",
+      "kind": "place",
+      "label": "New City"
+    }
+  ],
+  "statements": [
+    {
+      "id": "l1",
+      "kind": "premise",
+      "subject": "mira-parents",
+      "predicate": "speaks",
+      "object": {
+        "ref": "sanskrit"
+      },
+      "context": "Mira's parents continue to speak Sanskrit in their home."
+    },
+    {
+      "id": "l2",
+      "kind": "value",
+      "subject": "mira",
+      "predicate": "holds-value",
+      "object": "cultural continuity",
+      "context": "Mira values maintaining cultural continuity after migration."
+    },
+    {
+      "id": "l3",
+      "kind": "value",
+      "subject": "mira",
+      "predicate": "holds-value",
+      "object": "practical communication",
+      "context": "Mira also values practical communication in her new city."
+    },
+    {
+      "id": "l4",
+      "kind": "option",
+      "subject": "mira",
+      "predicate": "could-preserve",
+      "object": {
+        "ref": "family-legend"
+      },
+      "context": "Mira could preserve the family legend by recording it in Sanskrit."
+    },
+    {
+      "id": "l5",
+      "kind": "option",
+      "subject": "mira",
+      "predicate": "could-adapt",
+      "object": "bilingual storytelling",
+      "context": "Mira could adapt the legend into bilingual storytelling for her neighbors."
+    },
+    {
+      "id": "l6",
+      "kind": "option",
+      "subject": "mira",
+      "predicate": "could-forget",
+      "object": {
+        "ref": "sanskrit"
+      },
+      "context": "Mira could also choose to let Sanskrit fade if she prioritizes integration."
+    },
+    {
+      "id": "l7",
+      "kind": "option",
+      "subject": "mira",
+      "predicate": "could-innovate",
+      "object": "digital translation app",
+      "context": "Mira could develop a digital app that translates Sanskrit phrases into the local language."
+    },
+    {
+      "id": "l8",
+      "kind": "option",
+      "subject": "mira",
+      "predicate": "could-oppose",
+      "object": "language loss",
+      "context": "Mira could oppose language loss by organizing community workshops."
+    },
+    {
+      "id": "l9",
+      "kind": "option",
+      "subject": "mira",
+      "predicate": "could-reject",
+      "object": "traditional rituals",
+      "context": "Mira could reject traditional rituals if they feel irrelevant in the new city."
+    }
+  ]
+}

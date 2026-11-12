@@ -1,0 +1,1 @@
+{ "batches": 3, "batchSize": 2, "briefOffset": 1, "seed": 101, "numPredict": 3500, "requestTimeoutMs": 90000, "runBudgetMs": 250000, "promptFile": "reference-prompt.txt" }

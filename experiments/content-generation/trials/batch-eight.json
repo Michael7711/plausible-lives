@@ -1,0 +1,1 @@
+{ "batches": 2, "batchSize": 8, "briefOffset": 7, "seed": 201, "numCtx": 16384, "numPredict": 8500, "requestTimeoutMs": 165000, "runBudgetMs": 340000 }

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "broken-links",
+  "entities": [
+    { "id": "ari", "kind": "person", "label": "Ari" },
+    { "id": "ari", "kind": "person", "label": "Another Ari" }
+  ],
+  "statements": [
+    {
+      "id": "community-value",
+      "kind": "value",
+      "subject": "ari",
+      "predicate": "values",
+      "object": { "ref": "unlisted-community" }
+    },
+    {
+      "id": "room-option",
+      "kind": "choice-made",
+      "subject": "unlisted-person",
+      "predicate": "could-live-at",
+      "object": null
+    }
+  ]
+}
